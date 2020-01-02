@@ -3,7 +3,15 @@ library(shiny)
 library(shinyWidgets)
 library(shinydashboard)
 library(ggnetwork)
+# Changer le répertoire de travail sur celui du script en cours.
 # setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+# Pour partager le projet aux autres utilisateurs de R :
+# shiny::runGitHub(
+#   repo = "PokemonInsight",
+#   username = "rvcoudert",
+#   subdir = "Shiny")
+
 
 
 # ----- preprocess -----
@@ -129,8 +137,7 @@ dashboardPage(
       menuItem(
         text = "Accès aux données",
         tabName = "accessData",
-        icon = icon("database"),
-        selected = TRUE
+        icon = icon("database")
       )
     )
   ),

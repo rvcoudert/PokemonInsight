@@ -3,8 +3,7 @@ library(shiny)
 library(shinyWidgets)
 library(shinydashboard)
 library(ggnetwork)
-print(getwd())
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+# setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 
 # ----- preprocess -----

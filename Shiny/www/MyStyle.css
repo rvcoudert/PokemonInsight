@@ -1,0 +1,96 @@
+/* __Style standard.__ */
+
+/* Tous les titres. */
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Caveat Brush", cursive;
+}
+
+/* Centrer uniquement le premier niveau de titre. */
+h1 {
+	text-align: center;
+}
+
+/* __Semi-collapsed sidebar.__ */
+/* Transition pour la barre à gauche. */
+.main-sidebar {
+	transition: transform 1s, width 1s;
+}
+
+/* Réglages de la barre lorsqu'elle est repliée. */
+.sidebar-collapse .main-sidebar{	 
+	transform: translate(0,0);
+	width: 40px;
+	transition: transform 1s, width 1s;
+}
+
+/* Empêcher les textes de dépasser lorsque la barre est repliée. */
+.sidebar-collapse aside#sidebarCollapsed:hover {
+    overflow: hidden;
+}
+
+/* Translater le corps et Définir les transitions lorsque la barre est repliée. */
+.content-wrapper {
+	transition: margin-left 1s;
+}
+.sidebar-collapse .content-wrapper {
+	margin-left: 40px;
+	transition: margin-left 1s;
+}
+
+/* __Set Slider in the header.__ */
+/* Limiter la hauteur du header. */
+.main-header {
+	max-height: 50px;
+}
+/* Définir la couleur dans le header. */
+header {
+	color: white;
+}
+
+/* Définir la taille globale du Slider.*/
+header .shiny-input-container {
+	width: 200px!important;
+}
+/* Définir la taille de la sous-boîte du Slider. */
+.col-sm-10 {
+	width: 100%;
+}
+/* Réduire la taille du bouton du Slider. */
+header .btn {
+	padding: 3px 6px;
+	line-height: 1;
+}
+/* Définir la couleur du Slider. */
+header .show-tick {
+	background-color: #dd4b39;
+}
+/* Centrer verticalement écarter du bord droit le texte du header. */
+.navbar-custom-menu {
+	min-height: 50px;
+	vertical-align: middle;
+	display : flex;
+	align-items : center;
+	justify-content: center;
+	padding: 0 20px;
+}
+
+/* __Double-sized Checkboxes in Sidebar.__ */
+.well input[type=checkbox] {
+	-ms-transform: scale(1.5); /* IE */
+	-moz-transform: scale(1.5); /* FF */
+	-webkit-transform: scale(1.5); /* Safari and Chrome */
+	-o-transform: scale(1.5); /* Opera */
+	transform: scale(1.5);
+	padding: 10px;
+}
+
+/* __Align label in ValueBox.__ */
+.small-box {
+	text-align: center;
+	background-color : #dd4b39!important
+}
+
+.small-box:hover {
+	background-color: #d73925!important;
+}
